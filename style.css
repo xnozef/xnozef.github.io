@@ -137,17 +137,29 @@ main{
 
 .desc-head{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     /* background-color: aquamarine; */
 }
 
 .desc{
-
+    
     margin-right: 20px;
     
-    /* background-color: antiquewhite; */
+    background-color: antiquewhite;
+}
+
+.img-container{
+    border-radius: 2500px;
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    background-color: bisque;
+    background-image: url('./assets/Kép5.png');
+    background-position: 40% 30%;
+    background-size: cover;
 }
 
 .desc h1{
@@ -169,7 +181,7 @@ main{
     animation-duration: 0.7s;
     animation-name: slidein-left;
 }
-  
+
 @keyframes slidein-left {
     from {
       margin-left: 100%;
@@ -191,18 +203,6 @@ main{
       right:20px;
     }
   }
-
-.img-container{
-    border-radius: 2500px;
-    width: 250px;
-    height: 250px;
-    min-width: 250px;
-    min-height: 250px;
-    background-color: bisque;
-    background-image: url('./assets/Kép5.png');
-    background-position: 40% 30%;
-    background-size: cover;
-}
 
 .stack-container{
     display: flex;
