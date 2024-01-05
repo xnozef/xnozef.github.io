@@ -1,0 +1,251 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+    box-sizing: border-box;
+
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+body{
+    height: 1500px;
+}
+
+/* Navigation for webpage*/
+nav{
+    background-color: #FFA301;
+    width: 100%;
+    height: 75px;
+    font-size: 0; /*inline-block whitespace fix*/
+    position: relative;
+    /* border-bottom: 2px solid black; */
+}
+
+
+.logo{
+    color:black;
+    text-align: center;
+    
+    font-family: 'Fira sans';
+    font-size: 20px;
+    font-weight: bold;
+
+    /*font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24;*/
+
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul{
+    list-style: none;
+    font-size: 0; /*inline-block whitespace fix*/
+
+
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+
+    animation-duration: 0.7s;
+    animation-name: slidein-right;
+}
+
+nav ul li{
+    /*Display and positioning*/
+    display: inline-block;
+}
+
+nav ul li a{
+    /*Color, font, border*/
+    text-decoration: none;
+    /*background-color: #F0700E;*/
+    color: black;
+    /* border: 2px solid white;
+    border-radius: 13px; */
+
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 800;
+
+    /*Box model props*/
+    padding: 8px 10px;
+    margin: 0px 5px;
+
+    /*Display and positioning*/
+    display: block;
+}
+
+.fill1{
+    position: relative;
+    font-size: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #FFA301;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* .fill-wave1{
+    background-color: white;
+    font-size: 0;
+}
+
+.fill-wave1 svg{
+    fill: #FFA301;
+} */
+
+/*Body of webpage*/
+
+main{
+    position: relative;
+    background-image: url('./assets/intr2.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+.intro{
+    position: relative;
+    background-color: rgba(255,255,255,0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+    border-radius: 25px;
+    margin: -70px 50px;
+    padding: 100px 40px;
+
+    max-width: 1000px;
+
+    box-shadow: 3px 3px 3px black;
+
+}
+
+.desc-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: aquamarine; */
+}
+
+.desc{
+
+    margin-right: 20px;
+    
+    /* background-color: antiquewhite; */
+}
+
+.desc h1{
+    font-size: 45px;
+    animation-duration: 0.7s;
+    animation-name: slidein-left;
+}
+
+.desc h1 span{
+    font-weight: bold;
+    font-size: 45px;
+    color:#FFA301;
+}
+
+.desc p{
+    font-size: 20px;
+    color: darkgray;
+
+    animation-duration: 0.7s;
+    animation-name: slidein-left;
+}
+  
+@keyframes slidein-left {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  @keyframes slidein-right {
+    from {
+      right: 1000px;
+    }
+  
+    to {
+      right:20px;
+    }
+  }
+
+.img-container{
+    border-radius: 2500px;
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    background-color: bisque;
+    background-image: url('./assets/Kép5.png');
+    background-position: 40% 30%;
+    background-size: cover;
+}
+
+.stack-container{
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+
+    height: 50px;
+}
+
+.stack{
+    display:flex;
+    align-items: center;
+    margin: 10px;
+    padding: 5px 0px;
+    /* border: 1px solid black;
+    border-radius: 15px; */
+}
+
+.stack img{
+    margin-right: 10px;;
+}
+
+.stack p{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* .fill-wave2{
+    fill: #FFCD01;
+    background-color: white;
+    font-size: 0;
+}*/
+
+.fill2{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    height: 80px;
+    width: 100%;
+    background-color: #FFCD01;
+} 
+
+.fill3{
+    width: 100%;
+    height: 75px;
+    background-color: #FFCD01;
+} 
